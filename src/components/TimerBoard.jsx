@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import DisplayBoard from './DisplayBoard';
 
 class TimerBoard extends Component {
-  // TODO: something about this timer
-  timer = 5;
+  timer = 30;
 
   state = {
     timeRemaining: this.timer,

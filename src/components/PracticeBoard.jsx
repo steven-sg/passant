@@ -3,7 +3,6 @@ import Chessboard from 'chessboardjsx';
 import PropTypes from 'prop-types';
 
 class PracticeBoard extends Component {
-  // TODO: constants
   files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
   ranks = ['1', '2', '3', '4', '5', '6', '7', '8'];

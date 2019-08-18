@@ -5,7 +5,6 @@ import SidePanel from './SidePanel';
 import OptionsBar from './OptionsBar';
 
 class ControlCentre extends Component {
-  // TODO: constants
   files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 
   ranks = ['1', '2', '3', '4', '5', '6', '7', '8'];
@@ -28,7 +27,6 @@ class ControlCentre extends Component {
   }
 
   getQuestion = (lineType) => {
-    // TODO: should this take param?
     const { question } = this.state;
     if (lineType === 'files') {
       return this.files[question];
@@ -41,7 +39,6 @@ class ControlCentre extends Component {
 
   setMode = (newMode) => {
     const { mode, started } = this.state;
-    // TODO: if statement can probably be removed
     if (newMode === mode || started) {
       return;
     }
@@ -49,7 +46,6 @@ class ControlCentre extends Component {
   }
 
   getRandomInt = max => Math.floor(Math.random() * Math.floor(max));
-  // TODO: move to utils
 
   startGame = () => {
     const { started, mode } = this.state;
@@ -87,7 +83,6 @@ class ControlCentre extends Component {
     }
   }
 
-  // TODO: abstract entire dimmer section
   render() {
     const {
       started, score, scoreHistory, mode,
